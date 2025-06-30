@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website | Professional Template</title>
-    <meta name="description" content="A modern, responsive website template perfect for portfolios, businesses, and personal sites.">
+    <title>Testowa Witryna</title>
+    <meta name="description" content="I am just testing">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -114,11 +114,10 @@
             transition: var(--transition);
         }
 
-        /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #1d4ed8 100%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #ff2600 100%);
             color: var(--white);
-            padding: 120px 0 80px;
+            padding: 180px 0 100px;
             text-align: center;
         }
 
@@ -134,81 +133,6 @@
             margin-bottom: 2rem;
             opacity: 0.9;
             animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--accent-color);
-            color: var(--white);
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: var(--transition);
-            animation: fadeInUp 1s ease 0.4s both;
-        }
-
-        .cta-button:hover {
-            background: #d97706;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
-        }
-
-        /* Features Section */
-        .features {
-            padding: 80px 0;
-            background: var(--bg-light);
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 3rem;
-            color: var(--text-dark);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: var(--transition);
-            text-align: center;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        }
-
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--primary-color);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 1.5rem;
-            color: var(--white);
-        }
-
-        .feature-card h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card p {
-            color: var(--text-light);
         }
 
         /* About Section */
@@ -237,77 +161,6 @@
 
         .about-image {
             text-align: center;
-        }
-
-        .about-image-placeholder {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(45deg, var(--primary-color), #1d4ed8);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-size: 1.2rem;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background: var(--bg-light);
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid var(--border-light);
-            border-radius: 6px;
-            font-family: var(--font-family);
-            transition: var(--transition);
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-
-        .form-group textarea {
-            height: 120px;
-            resize: vertical;
-        }
-
-        .submit-btn {
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 12px 30px;
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            width: 100%;
-        }
-
-        .submit-btn:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
         }
 
         /* Footer */
@@ -376,22 +229,62 @@
             }
 
             .features,
-            .about,
-            .contact {
+            .about {
                 padding: 60px 0;
             }
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+        @media (min-width: 900px) {
+            .info-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .info-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 25px rgba(30, 41, 59, 0.199);
+            padding: 2.5rem 2rem;
+            min-height: 420px;
+            font-size: 1.15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .info-card h3 {
+            margin-bottom: 1.5rem;
+            color: #000000;
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        .info-card p {
+            margin-bottom: 1rem;
+            color: #334155;
+        }
+        .info-card a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .info-card a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <nav class="container">
-            <a href="#" class="logo">YourBrand</a>
+            <a href="#" class="logo">Lorem ipsum test</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">O Kancelarii</a></li>
+                <li><a href="wzory.html">Wzory pism</a></li>
+                <li><a href="licytacje.html">Licytacje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="useful.html">Przydatne Linki</a></li>
             </ul>
             <div class="mobile-menu">
                 <span></span>
@@ -404,83 +297,79 @@
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1>Welcome to Your Website</h1>
-                <p>A modern, professional template that's perfect for any business or personal project</p>
-                <a href="contact.html" class="cta-button">Get Started</a>
-            </div>
-        </section>
-
-        <section id="features" class="features">
-            <div class="container">
-                <h2 class="section-title">Features</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Fast & Responsive</h3>
-                        <p>Built with modern web standards for optimal performance and mobile-first design.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎨</div>
-                        <h3>Beautiful Design</h3>
-                        <p>Clean, professional aesthetic that works for any industry or personal brand.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔧</div>
-                        <h3>Easy to Customize</h3>
-                        <p>Well-structured code that's easy to modify and extend for your specific needs.</p>
-                    </div>
-                </div>
+                <h1>Imię nazwisko</h1>
+                <p>Osoba taka i taka, pracujaca tutaj i tam, z takimi i takim zaszczytami</p>
             </div>
         </section>
 
         <section id="about" class="about">
             <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About This Template</h2>
-                        <p>This starter template is designed to be the perfect foundation for your website. Whether you're building a portfolio, business site, or personal blog, this template provides all the essential components you need.</p>
-                        <p>The code is clean, well-commented, and follows modern web development best practices. It's also optimized for easy conversion to WordPress or other CMS platforms.</p>
-                        <a href="contact.html" class="cta-button">Learn More</a>
+                <h2 class="section-title"></h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Płatności</h3>
+                        <p>
+                            Wpłat należy dokonywać w Kancelarii w godzinach urzędowania<br>
+                            bądź na konto komornika, wskazując sygnaturę sprawy oraz oznaczenie stron postępowania.
+                        </p>
+                        <p>
+                            <strong>PKO Bank Polski S.A. O/Krakow</strong><br>
+                            <strong>97 102097 102097 102097 102097 1020</strong><br>
+                            Kod SWIFT: <strong>BPKOPLPW</strong>
+                        </p>
+                        <p>
+                            W przypadku przelewu spoza granic kraju należy dodatkowo wpisać kod SWIFT.
+                        </p>
                     </div>
-                    <div class="about-image">
-                        <div class="about-image-placeholder">
-                            Your Image Here
+                    <div class="info-card">
+                        <h3>Kontakt</h3>
+                        <p>
+                            <strong>Imie i nazwisko</strong><br>
+                            Jakiś tam fajny opis tej postaci, które tam sobie robi rzeczy <br><br>
+                            <strong>Telefon:</strong> <a href="tel:+1234567890">+1 234 567 890</a><br>
+                            <strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a><br>
+                            <strong>NIP:</strong> 123123123<br>
+                            <strong>Regon:</strong> 1231231231312123<br>
+                            <strong>ID w systemie:</strong> x123x1<br>
+                            <strong>ePuap:</strong> xdxd1W@@@1!<br><br>
+
+                            Jakieś tam rzeczy czy inne tego typu sprawy
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Godziny otwarcia Kancelarii</h3>
+                        <p>
+                            Poniedziałek: <strong>8:00 - 15:00</strong><br>
+                            Wtorek: <strong>8:00 - 15:00</strong><br>
+                            Środa: <strong>Nieczynne</strong><br>
+                            Czwartek: <strong>8:00 - 15:00</strong><br>
+                            Piątek: <strong>8:00 - 15:00</strong><br>
+                            Adres: <strong>Śliska 8/12G Kraków</strong>
+                        </p>
+                        <div style="margin-top:1em;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.4855347384096!2d19.93842321215084!3d50.03973521673221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b27262c4f9d%3A0x18d07b171dcca394!2zxZpsaXNrYSA1LCAzMC01MDQgS3Jha8Ozdw!5e0!3m2!1spl!2spl!4v1751311343265!5m2!1spl!2spl"
+                                width="100%"
+                                height="200"
+                                style="border:0; border-radius:8px;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Your Website. All rights reserved.</p>
+            <p>&copy; 2025 Lorem ipsum orem ipsumorem ipsumorem ipsum. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -494,7 +383,6 @@
             });
         });
 
-        // Header background change on scroll
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -506,14 +394,6 @@
             }
         });
 
-        // Form submission handling
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! This is a demo form.');
-            this.reset();
-        });
-
-        // Mobile menu toggle (basic functionality)
         document.querySelector('.mobile-menu').addEventListener('click', function() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
