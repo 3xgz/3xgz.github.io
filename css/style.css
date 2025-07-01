@@ -115,6 +115,11 @@ nav {
     background-color: #222; 
 }
 
+#kancelaria-hero.hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Court_in_Piotrkow_01.jpg/1920px-Court_in_Piotrkow_01.jpg');
+    background-color: #222;
+}
+
 .hero {
     background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center/cover no-repeat;
     color: var(--white);
@@ -146,6 +151,10 @@ nav {
     background: url('https://ocdn.eu/pulscms-transforms/1/3fok9kuTURBXy8xODlmN2QxYy1iMzYyLTQzZjAtYjIzMy0yYjZiN2VkZWE5YWEuanBlZ5GVAs0EsADDw94AAaEwBQ');
 }
 
+#kancelaria-hero.hero::before {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Court_in_Piotrkow_01.jpg/1920px-Court_in_Piotrkow_01.jpg');
+}
+
 .hero .hero-content {
     transition: opacity 0.8s, visibility 0.8s;
     position: relative;
@@ -170,6 +179,30 @@ nav {
     margin-bottom: 2rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.2s both;
+}
+
+#contact-hero h1 {
+    text-shadow: 
+        -1px -1px 0 #000,
+        -1px 0px 0 #000,
+        -1px 1px 0 #000,
+        0px -1px 0 #000,
+        0px 1px 0 #000,
+        1px -1px 0 #000,
+        1px 0px 0 #000,
+        1px 1px 0 #000;
+}
+
+#contact-hero p {
+    text-shadow: 
+        -1px -1px 0 #000,
+        -1px 0px 0 #000,
+        -1px 1px 0 #000,
+        0px -1px 0 #000,
+        0px 1px 0 #000,
+        1px -1px 0 #000,
+        1px 0px 0 #000,
+        1px 1px 0 #000;
 }
 
 .about {
@@ -212,7 +245,7 @@ nav {
 .info-card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 25px rgba(30, 41, 59, 0.199);
+    box-shadow: 0 2px 18px rgba(30, 41, 59, 0.322);;
     padding: 2.5rem 2rem;
     min-height: 420px;
     font-size: 1.15rem;
@@ -360,7 +393,7 @@ footer p {
     min-width: 360px;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 25px rgba(30, 41, 59, 0.13);
+    box-shadow: 0 2px 18px rgba(30, 41, 59, 0.322);;
     padding: 2.5rem 2rem;
     font-size: 1.15rem;
     display: flex;
@@ -387,7 +420,7 @@ footer p {
 .contact-form {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(30,41,59,0.08);
+    box-shadow: 0 2px 18px rgba(30, 41, 59, 0.322);;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -551,4 +584,170 @@ footer p {
 .auction-card.open {
     box-shadow: 0 8px 32px rgba(30,41,59,0.18);
     border-color: #2563eb;
+}
+
+.systems-access-section {
+    margin: 60px 0 60px 0;
+    padding: 0;
+}
+
+.systems-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5em;
+    margin-top: -1em;
+    color: #222;
+    text-align: left;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.systems-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.system-row {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.system-logo {
+    width: 150px;
+    max-width: 40vw;
+    height: auto;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 18px rgba(30, 41, 59, 0.322);
+    padding: 0.5em 1em;
+}
+
+.system-desc {
+    font-size: 1.15rem;
+    color: #222;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.system-detail {
+    color: #5a58d3;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .systems-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .systems-list {
+        gap: 1.5em;
+    }
+    .system-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.7em;
+    }
+    .system-logo {
+        width: 80px;
+        padding: 0.3em 0.5em;
+    }
+}
+
+.auction-section {
+    padding: 50px 0 40px 0;
+    background: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auction-section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #1e293b;
+}
+
+.accordion-list.auction-accordion {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.accordion-item {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 18px rgba(30, 41, 59, 0.322);
+    overflow: hidden;
+    border: 1.5px solid #e2e8f0;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.accordion-toggle {
+    width: 100%;
+    text-align: left;
+    background: #f1f5f9;
+    border: none;
+    outline: none;
+    padding: 1.3em 1.2em;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1e293b;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-bottom: 1px solid #e2e8f0;
+    border-radius: 18px 18px 0 0;
+}
+
+.accordion-toggle:hover,
+.accordion-toggle.active {
+    background: #e0e7ef;
+}
+
+.accordion-content {
+    display: none;
+    padding: 1.2em 1.2em 1.5em 1.2em;
+    background: #fff;
+    color: #334155;
+    font-size: 1.05rem;
+    border-radius: 0 0 18px 18px;
+}
+
+.accordion-item.open .accordion-content {
+    display: block;
+}
+
+.accordion-item.open {
+    box-shadow: 0 2px 18px rgba(30, 41, 59, 0.322);
+    border-color: #2563eb;
+}
+
+.auction-section-spacer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8fafc; 
+    border: none;
+}
+
+.auction-section-spacer hr {
+    border: none;
+    height: 4px;
+    width: 420px;
+    background: #5a58d3;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 100px;
 }

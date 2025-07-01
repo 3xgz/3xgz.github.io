@@ -34,6 +34,67 @@
             </div>
         </nav>
     </header>
+
+        <main>
+        <section id="kancelaria-hero" class="hero">
+            <div class="container hero-content">
+                <h1>O Kancelarii</h1>
+                <p>bottom text</p>
+            </div>
+        </section>
+
+        <section class="systems-access-section">
+    <div class="container">
+        <h2 class="systems-title">
+            W ramach postępowania egzekucyjnego kancelaria posiada dostęp do następujących systemów informatycznych:
+        </h2>
+        <div class="systems-list">
+            <div class="system-row">
+                <img src="https://olawakomornik.pl/wp-content/uploads/2020/05/EPU-LOGO.png" alt="EPU" class="system-logo">
+                <div class="system-desc">
+                    <strong>EPU</strong> (e-sąd) – system obsługi elektronicznych wniosków egzekucyjnych<br>
+                    <span class="system-detail">ID w systemie EPU: <b>5555</b></span>
+                </div>
+            </div>
+            <div class="system-row">
+                <img src="https://lh3.googleusercontent.com/proxy/NHSUG5drQyuIQzXt6Xn-eemv-PPgtNfk1Wk9zOcEhYgC3vcn4WAN2FzY8JgUD52R--hI3YoVkgg5e8NGqohERvyazr_-sYMHZSAfYsLlIOse1KGUFaKf0fQ" alt="EKW" class="system-logo">
+                <div class="system-desc">
+                    <strong>EKW</strong> – Centralnej Bazy Ksiąg Wieczystych – system umożliwiający wyszukiwanie i zajmowanie nieruchomości
+                </div>
+            </div>
+            <div class="system-row">
+                <img src="https://bank.pl/wp-content/uploads/2017/01/logo_ognivo.jpg" alt="OGNIVO" class="system-logo">
+                <div class="system-desc">
+                    <strong>OGNIVO 2</strong> – system umożliwiający wyszukiwanie i zajmowanie rachunków bankowych
+                </div>
+            </div>
+            <div class="system-row">
+                <img src="https://olawakomornik.pl/wp-content/uploads/2020/05/ZUS-PUE.jpg" alt="PUE ZUS" class="system-logo">
+                <div class="system-desc">
+                    <strong>PUE ZUS</strong> – system umożliwiający elektroniczne przesyłanie wniosków do ZUS – EKS
+                </div>
+            </div>
+            <div class="system-row">
+                <img src="https://olawakomornik.pl/wp-content/uploads/2020/05/EPUAP_logo.jpg" alt="ePUAP" class="system-logo">
+                <div class="system-desc">
+                    <strong>ePUAP</strong> – system elektronicznej komunikacji z jednostkami administracji publicznej<br>
+                    <span class="system-detail">ePUAP: <b>P_P_PPPPPP</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+            window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            if (window.scrollY > 50) {
+                hero.classList.add('hide-hero-text');
+            } else {
+                hero.classList.remove('hide-hero-text');
+            }
+        });
+</script>
 </body>
 
 <footer>
@@ -41,4 +102,3 @@
             <p>&copy; 2025 Lorem ipsum orem ipsumorem ipsumorem ipsum. All rights reserved.</p>
         </div>
     </footer>
-    

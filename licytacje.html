@@ -43,16 +43,13 @@
             </div>
         </section>
 
-        <section class="auction-details-section">
+        <section class="auction-section">
             <div class="container">
-                <h2 class="auction-title">Szczegóły licytacji</h2>
-                <div class="auction-cards-grid">
-                    <div class="auction-card">
-                        <button class="auction-card-header" type="button">
-                            <span class="auction-card-title">Licytacja 1: Nieruchomość</span>
-                            <span class="auction-card-arrow">&#9660;</span>
-                        </button>
-                        <div class="auction-card-body">
+                <h2 class="auction-section-title" style="margin-top: -1.2rem;" >Aktualne licytacje:</h2>
+                <div class="accordion-list auction-accordion" style="margin-top: -0.5rem;">
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Licytacja 1: Nieruchomość</button>
+                        <div class="accordion-content">
                             <p>
                                 <strong>Opis:</strong> Szczegółowy opis licytacji nieruchomości.<br>
                                 <strong>Data:</strong> 10.07.2025<br>
@@ -60,12 +57,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="auction-card">
-                        <button class="auction-card-header" type="button">
-                            <span class="auction-card-title">Licytacja 2: Samochód</span>
-                            <span class="auction-card-arrow">&#9660;</span>
-                        </button>
-                        <div class="auction-card-body">
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Licytacja 2: Samochód</button>
+                        <div class="accordion-content">
                             <p>
                                 <strong>Opis:</strong> Szczegółowy opis licytacji samochodu.<br>
                                 <strong>Data:</strong> 15.07.2025<br>
@@ -73,16 +67,35 @@
                             </p>
                         </div>
                     </div>
-                    <div class="auction-card">
-                        <button class="auction-card-header" type="button">
-                            <span class="auction-card-title">Licytacja 3: Sprzęt elektroniczny</span>
-                            <span class="auction-card-arrow">&#9660;</span>
-                        </button>
-                        <div class="auction-card-body">
+                </div>
+            </div>
+        </section>
+
+        <div class="auction-section-spacer">
+            <hr>
+        </div>
+
+        <section class="auction-section">
+            <div class="container">
+                <h2 class="auction-section-title" style="margin-top: -1.2rem;" >Zakończone licytacje:</h2>
+                <div class="accordion-list auction-accordion" style="margin-top: -0.5rem;">
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Licytacja 3: Sprzęt elektroniczny</button>
+                        <div class="accordion-content">
                             <p>
-                                <strong>Opis:</strong> Szczegółowy opis licytacji sprzętu elektronicznego.<br>
-                                <strong>Data:</strong> 20.07.2025<br>
+                                <strong>Opis:</strong> Szczegółowy opis zakończonej licytacji sprzętu elektronicznego.<br>
+                                <strong>Data:</strong> 20.06.2025<br>
                                 <strong>Miejsce:</strong> Kraków, ul. Przykładowa 3
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Licytacja 4: Działka budowlana</button>
+                        <div class="accordion-content">
+                            <p>
+                                <strong>Opis:</strong> Szczegółowy opis zakończonej licytacji działki budowlanej.<br>
+                                <strong>Data:</strong> 05.06.2025<br>
+                                <strong>Miejsce:</strong> Kraków, ul. Przykładowa 4
                             </p>
                         </div>
                     </div>
@@ -102,13 +115,19 @@ document.querySelectorAll('.auction-card-header').forEach(btn => {
     btn.addEventListener('click', function() {
         const card = this.parentElement;
         card.classList.toggle('open');
-        // Arrow rotation
         const arrow = this.querySelector('.auction-card-arrow');
         if(card.classList.contains('open')) {
             arrow.style.transform = 'rotate(180deg)';
         } else {
             arrow.style.transform = 'rotate(0deg)';
         }
+    });
+});
+
+document.querySelectorAll('.accordion-toggle').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('open');
     });
 });
 </script>
