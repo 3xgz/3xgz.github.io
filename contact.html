@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testowa Witryna - kontakt</title>
+    <meta name="description" content="I am just testing">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Lorem ipsum test</a>
+            <ul class="nav-links">
+                <li><a href="kancelaria.html">O Kancelarii</a></li>
+                <li><a href="wzory.html">Wzory pism</a></li>
+                <li><a href="licytacje.html">Licytacje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#">Przydatne Linki</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.gov.pl/" target="_blank">gov.pl</a></li>
+                        <li><a href="https://www.epuap.gov.pl/" target="_blank">ePUAP</a></li>
+                        <li><a href="https://ekrs.ms.gov.pl/" target="_blank">KRS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-hero" class="hero">
+            <div class="container hero-content">
+                <h1>Kontakt</h1>
+                <p>Skontaktuj się z nami korzystając z poniższych danych lub formularza kontaktowego.</p>
+            </div>
+        </section>
+
+        <section class="contact-info-section">
+            <div class="container info-grid">
+                <div class="info-card">
+                    <h3>Dane kontaktowe</h3>
+                    <p>
+                        Imię Nazwisko<br>
+                        <strong>Telefon:</strong> <a href="tel:+48123456789">+48 123 456 789</a><br>
+                        <strong>Email:</strong> <a href="mailto:kontakt@przyklad.pl">kontakt@przyklad.pl</a><br>
+                        <strong>NIP:</strong> 123123123<br>
+                        <strong>Regon:</strong> 1231231231312123<br>
+                        <strong>ePuap:</strong> xdxd1W@@@1!
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h3>Adres kancelarii</h3>
+                    <p>
+                        Śliska 8/12G<br>
+                        30-504 Kraków<br>
+                        Polska
+                    </p>
+                    <p>
+                        <strong>Godziny otwarcia:</strong><br>
+                        Poniedziałek–Piątek: 8:00–15:00<br>
+                        Środa: Nieczynne
+                    </p>
+                    <div style="margin-top:1em;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.4855347384096!2d19.93842321215084!3d50.03973521673221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b27262c4f9d%3A0x18d07b171dcca394!2zxZpsaXNrYSA1LCAzMC01MDQgS3Jha8Ozdw!5e0!3m2!1spl!2spl!4v1751311343265!5m2!1spl!2spl"
+                            width="100%"
+                            height="160"
+                            style="border:0; border-radius:8px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container" style="max-width:600px;">
+                <h1 style="text-align:center; margin-bottom:1.5rem;">Formularz kontaktowy</h1>
+                <form class="contact-form" autocomplete="off">
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adres e-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Wiadomość</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Wyślij</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lorem ipsum orem ipsumorem ipsumorem ipsum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Dziękujemy za kontakt! Twoja wiadomość została wysłana (demo).');
+        this.reset();
+    });
+
+            window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            if (window.scrollY > 50) {
+                hero.classList.add('hide-hero-text');
+            } else {
+                hero.classList.remove('hide-hero-text');
+            }
+        });
+    </script>
+</body>
+</html>

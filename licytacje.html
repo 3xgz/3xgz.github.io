@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testowa Witryna - licytacje</title>
+    <meta name="description" content="I am just testing">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Lorem ipsum test</a>
+            <ul class="nav-links">
+                <li><a href="kancelaria.html">O Kancelarii</a></li>
+                <li><a href="wzory.html">Wzory pism</a></li>
+                <li><a href="licytacje.html">Licytacje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#">Przydatne Linki</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.gov.pl/" target="_blank">gov.pl</a></li>
+                        <li><a href="https://www.epuap.gov.pl/" target="_blank">ePUAP</a></li>
+                        <li><a href="https://ekrs.ms.gov.pl/" target="_blank">KRS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="licytacje-hero" class="hero">
+            <div class="container hero-content">
+                <h1>Licytacje</h1>
+                <p>tutaj mozna dac cokolwiek</p>
+            </div>
+        </section>
+
+        <section class="auction-details-section">
+            <div class="container">
+                <h2 class="auction-title">Szczegóły licytacji</h2>
+                <div class="auction-cards-grid">
+                    <div class="auction-card">
+                        <button class="auction-card-header" type="button">
+                            <span class="auction-card-title">Licytacja 1: Nieruchomość</span>
+                            <span class="auction-card-arrow">&#9660;</span>
+                        </button>
+                        <div class="auction-card-body">
+                            <p>
+                                <strong>Opis:</strong> Szczegółowy opis licytacji nieruchomości.<br>
+                                <strong>Data:</strong> 10.07.2025<br>
+                                <strong>Miejsce:</strong> Kraków, ul. Przykładowa 1
+                            </p>
+                        </div>
+                    </div>
+                    <div class="auction-card">
+                        <button class="auction-card-header" type="button">
+                            <span class="auction-card-title">Licytacja 2: Samochód</span>
+                            <span class="auction-card-arrow">&#9660;</span>
+                        </button>
+                        <div class="auction-card-body">
+                            <p>
+                                <strong>Opis:</strong> Szczegółowy opis licytacji samochodu.<br>
+                                <strong>Data:</strong> 15.07.2025<br>
+                                <strong>Miejsce:</strong> Kraków, ul. Przykładowa 2
+                            </p>
+                        </div>
+                    </div>
+                    <div class="auction-card">
+                        <button class="auction-card-header" type="button">
+                            <span class="auction-card-title">Licytacja 3: Sprzęt elektroniczny</span>
+                            <span class="auction-card-arrow">&#9660;</span>
+                        </button>
+                        <div class="auction-card-body">
+                            <p>
+                                <strong>Opis:</strong> Szczegółowy opis licytacji sprzętu elektronicznego.<br>
+                                <strong>Data:</strong> 20.07.2025<br>
+                                <strong>Miejsce:</strong> Kraków, ul. Przykładowa 3
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lorem ipsum orem ipsumorem ipsumorem ipsum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+document.querySelectorAll('.auction-card-header').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const card = this.parentElement;
+        card.classList.toggle('open');
+        // Arrow rotation
+        const arrow = this.querySelector('.auction-card-arrow');
+        if(card.classList.contains('open')) {
+            arrow.style.transform = 'rotate(180deg)';
+        } else {
+            arrow.style.transform = 'rotate(0deg)';
+        }
+    });
+});
+</script>
+
+</body>
+</html>

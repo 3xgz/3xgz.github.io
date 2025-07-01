@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testowa Witryna - wzory</title>
+    <meta name="description" content="I am just testing">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Lorem ipsum test</a>
+            <ul class="nav-links">
+                <li><a href="kancelaria.html">O Kancelarii</a></li>
+                <li><a href="wzory.html">Wzory pism</a></li>
+                <li><a href="licytacje.html">Licytacje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#">Przydatne Linki</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.gov.pl/" target="_blank">gov.pl</a></li>
+                        <li><a href="https://www.epuap.gov.pl/" target="_blank">ePUAP</a></li>
+                        <li><a href="https://ekrs.ms.gov.pl/" target="_blank">KRS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+        <section id="wzory-hero" class="hero">
+            <div class="container hero-content">
+                <h1>Wzory etc.</h1>
+                <p>tutaj mozna dac cokolwiek</p>
+            </div>
+        </section>
+
+        <section class="dropdown-section">
+            <div class="container">
+                <h1 style="text-align:center; margin-bottom:1rem; margin-top:1rem; font-size: 2.4rem;">Wzory dokumentów do pobrania</h1>
+                <div class="accordion-list">
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 1: Pełnomocnictwo</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 1. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 2: Wniosek egzekucyjny</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 2. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 3: Oświadczenie majątkowe</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 3. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 4: Skarga na czynności komornika</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 4. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 5: Wniosek o umorzenie postępowania</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 5. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 6: Wniosek o zawieszenie postępowania</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 6. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 7: Wniosek o wydanie zaświadczenia</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 7. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 8: Wniosek o zwolnienie spod egzekucji</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 8. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 9: Wniosek o wyjawienie majątku</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 9. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Wzór 10: Inny dokument</button>
+                        <div class="accordion-content">
+                            <p>Opis lub instrukcja dla wzoru 10. <br> <a href="#">Pobierz plik</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+document.querySelectorAll('.accordion-toggle').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('open');
+    });
+});
+
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            if (window.scrollY > 50) {
+                hero.classList.add('hide-hero-text');
+            } else {
+                hero.classList.remove('hide-hero-text');
+            }
+        });
+</script>
+</body>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2025 Lorem ipsum orem ipsumorem ipsumorem ipsum. All rights reserved.</p>
+        </div>
+    </footer>
