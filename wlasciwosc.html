@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testowa Witryna - właściwość</title>
+    <meta name="description" content="I am just testing">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Lorem ipsum test</a>
+            <ul class="nav-links">
+                <li><a href="kancelaria.html">O Kancelarii</a></li>
+                <li><a href="wlasciwosc.html">Właściwość</a></li>
+                <li><a href="wzory.html">Wzory pism</a></li>
+                <li><a href="licytacje.html">Licytacje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#">Przydatne Linki</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.gov.pl/" target="_blank">gov.pl</a></li>
+                        <li><a href="https://www.epuap.gov.pl/" target="_blank">ePUAP</a></li>
+                        <li><a href="https://ekrs.ms.gov.pl/" target="_blank">KRS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+        <section id="wlasciwosc-hero" class="hero">
+            <div class="container hero-content">
+                <h1>Właściwość</h1>
+                <p>bottom tekst</p>
+            </div>
+        </section>
+
+        <!-- 1 & 2: Text left, big photo right -->
+        <section class="property-main-section">
+            <div class="container property-flex">
+                <div class="property-text">
+                    <h2>Informacje o właściwości</h2>
+                    <p>
+                        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis tellus in dui porta, eu rhoncus felis suscipit. Fusce sed molestie dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas venenatis porta turpis sed rutrum. Mauris efficitur sit amet massa at dictum. Proin est mauris, pulvinar sed fringilla at, convallis efficitur nunc. Nunc porttitor id nibh sed lobortis. Quisque at venenatis nulla. Nam ut velit commodo, facilisis enim ut, pretium mi. Integer ultricies dui enim, ut feugiat velit finibus ut. Duis sit amet dolor metus. Integer molestie et metus sit amet laoreet. Pellentesque faucibus ante turpis, vel efficitur magna lacinia nec.
+                    </p><br>
+                    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis tellus in dui porta, eu rhoncus felis suscipit. Fusce sed molestie dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas venenatis porta turpis sed rutrum. Mauris efficitur sit amet massa at dictum. Proin est mauris, pulvinar sed fringilla at, convallis efficitur nunc. Nunc porttitor id nibh sed lobortis. Quisque at venenatis nulla. Nam ut velit commodo, facilisis enim ut, pretium mi. Integer ultricies dui enim, ut feugiat velit finibus ut. Duis sit amet dolor metus. Integer molestie et metus sit amet laoreet. Pellentesque faucibus ante turpis, vel efficitur magna lacinia nec.
+                </div>
+                <div class="property-photo">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Właściwość" />
+                </div>
+            </div>
+        </section>
+
+        <section class="property-dropdown-section">
+            <div class="container">
+                <h2 class="property-dropdown-title" style="margin-top: -4.5rem;">Najczęściej zadawane pytania</h2>
+                <div class="accordion-list" style="margin-bottom: -0.5rem;">
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Czym jest właściwość miejscowa?</button>
+                        <div class="accordion-content">
+                            <p>
+                                Właściwość miejscowa określa, na jakim obszarze komornik może prowadzić postępowania egzekucyjne.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Czy mogę wybrać dowolnego komornika?</button>
+                        <div class="accordion-content">
+                            <p>
+                                W niektórych przypadkach wybór komornika jest ograniczony przepisami prawa. Skontaktuj się z kancelarią, aby uzyskać szczegóły.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-toggle">Jakie dokumenty są potrzebne?</button>
+                        <div class="accordion-content">
+                            <p>
+                                Lista wymaganych dokumentów zależy od rodzaju sprawy. Skonsultuj się z kancelarią, aby uzyskać pełną listę.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2025 Lorem ipsum orem ipsumorem ipsumorem ipsum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+document.querySelectorAll('.accordion-toggle').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('open');
+    });
+});
+
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            if (window.scrollY > 290) {
+                hero.classList.add('hide-hero-text');
+            } else {
+                hero.classList.remove('hide-hero-text');
+            }
+        });
+</script>
+
+</body>
+</html>

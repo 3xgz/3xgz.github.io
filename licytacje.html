@@ -15,6 +15,7 @@
             <a href="index.html" class="logo">Lorem ipsum test</a>
             <ul class="nav-links">
                 <li><a href="kancelaria.html">O Kancelarii</a></li>
+                <li><a href="wlasciwosc.html">Właściwość</a></li>
                 <li><a href="wzory.html">Wzory pism</a></li>
                 <li><a href="licytacje.html">Licytacje</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
@@ -130,6 +131,15 @@ document.querySelectorAll('.accordion-toggle').forEach(btn => {
         item.classList.toggle('open');
     });
 });
+
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero');
+            if (window.scrollY > 290) {
+                hero.classList.add('hide-hero-text');
+            } else {
+                hero.classList.remove('hide-hero-text');
+            }
+        });
 </script>
 
 </body>
