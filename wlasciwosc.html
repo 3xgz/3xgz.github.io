@@ -44,17 +44,23 @@
             </div>
         </section>
 
-        <!-- 1 & 2: Text left, big photo right -->
         <section class="property-main-section">
             <div class="container property-flex">
                 <div class="property-text">
                     <h2>Informacje o właściwości</h2>
-                    <p>
-                        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis tellus in dui porta, eu rhoncus felis suscipit. Fusce sed molestie dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas venenatis porta turpis sed rutrum. Mauris efficitur sit amet massa at dictum. Proin est mauris, pulvinar sed fringilla at, convallis efficitur nunc. Nunc porttitor id nibh sed lobortis. Quisque at venenatis nulla. Nam ut velit commodo, facilisis enim ut, pretium mi. Integer ultricies dui enim, ut feugiat velit finibus ut. Duis sit amet dolor metus. Integer molestie et metus sit amet laoreet. Pellentesque faucibus ante turpis, vel efficitur magna lacinia nec.
-                    </p><br>
-                    
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis tellus in dui porta, eu rhoncus felis suscipit. Fusce sed molestie dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas venenatis porta turpis sed rutrum. Mauris efficitur sit amet massa at dictum. Proin est mauris, pulvinar sed fringilla at, convallis efficitur nunc. Nunc porttitor id nibh sed lobortis. Quisque at venenatis nulla. Nam ut velit commodo, facilisis enim ut, pretium mi. Integer ultricies dui enim, ut feugiat velit finibus ut. Duis sit amet dolor metus. Integer molestie et metus sit amet laoreet. Pellentesque faucibus ante turpis, vel efficitur magna lacinia nec.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis tellus in dui porta, eu rhoncus felis suscipit.</p>
+                    <p>Fusce sed molestie dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas venenatis porta turpis sed rutrum.</p>
+                    <p>Mauris efficitur sit amet massa at dictum. Proin est mauris, pulvinar sed fringilla at, convallis efficitur nunc.</p>
+                    <p>Nunc porttitor id nibh sed lobortis. Quisque at venenatis nulla. Nam ut velit commodo, facilisis enim ut, pretium mi.</p>
+                    <p>Integer ultricies dui enim, ut feugiat velit finibus ut. Duis sit amet dolor metus. Integer molestie et metus sit amet laoreet.</p>
+                    <p>Pellentesque faucibus ante turpis, vel efficitur magna lacinia nec.</p><br>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis tellus in dui porta, eu rhoncus felis suscipit.</p>
+                    <p>Fusce sed molestie dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas venenatis porta turpis sed rutrum.</p>
+                    <p>Mauris efficitur sit amet massa at dictum. Proin est mauris, pulvinar sed fringilla at, convallis efficitur nunc.</p>
+                    <p>Nunc porttitor id nibh sed lobortis. Quisque at venenatis nulla. Nam ut velit commodo, facilisis enim ut, pretium mi.</p>
+                    <p>Integer ultricies dui enim, ut feugiat velit finibus ut. Duis sit amet dolor metus. Integer molestie et metus sit amet laoreet.</p>
+                    <p>Pellentesque faucibus ante turpis, vel efficitur magna lacinia nec.</p>
                 </div>
                 <div class="property-photo">
                     <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Właściwość" />
@@ -94,19 +100,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis 
             </div>
         </section>
 
-<footer>
+    <footer>
         <div class="container">
             <p>&copy; 2025 Lorem ipsum orem ipsumorem ipsumorem ipsum. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-document.querySelectorAll('.accordion-toggle').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const item = this.parentElement;
-        item.classList.toggle('open');
-    });
-});
+        document.querySelectorAll('.accordion-toggle').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const item = this.parentElement;
+                item.classList.toggle('open');
+            });
+        });
 
         window.addEventListener('scroll', function() {
             const hero = document.querySelector('.hero');
@@ -116,7 +122,12 @@ document.querySelectorAll('.accordion-toggle').forEach(btn => {
                 hero.classList.remove('hide-hero-text');
             }
         });
-</script>
+
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('open');
+        });
+    </script>
 
 </body>
 </html>

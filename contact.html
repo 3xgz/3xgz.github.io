@@ -119,14 +119,20 @@
         this.reset();
     });
 
-            window.addEventListener('scroll', function() {
-            const hero = document.querySelector('.hero');
-            if (window.scrollY > 290) {
-                hero.classList.add('hide-hero-text');
-            } else {
-                hero.classList.remove('hide-hero-text');
-            }
-        });
+    window.addEventListener('scroll', function() {
+        const hero = document.querySelector('.hero');
+        if (window.scrollY > 290) {
+            hero.classList.add('hide-hero-text');
+        } else {
+            hero.classList.remove('hide-hero-text');
+        }
+    });
+
+    document.querySelector('.mobile-menu').addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('open');
+    });
     </script>
+
 </body>
 </html>

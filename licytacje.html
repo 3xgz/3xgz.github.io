@@ -112,25 +112,25 @@
     </footer>
 
     <script>
-document.querySelectorAll('.auction-card-header').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const card = this.parentElement;
-        card.classList.toggle('open');
-        const arrow = this.querySelector('.auction-card-arrow');
-        if(card.classList.contains('open')) {
-            arrow.style.transform = 'rotate(180deg)';
-        } else {
-            arrow.style.transform = 'rotate(0deg)';
-        }
-    });
-});
+        document.querySelectorAll('.auction-card-header').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const card = this.parentElement;
+                card.classList.toggle('open');
+                const arrow = this.querySelector('.auction-card-arrow');
+                if(card.classList.contains('open')) {
+                    arrow.style.transform = 'rotate(180deg)';
+                } else {
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
 
-document.querySelectorAll('.accordion-toggle').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const item = this.parentElement;
-        item.classList.toggle('open');
-    });
-});
+        document.querySelectorAll('.accordion-toggle').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const item = this.parentElement;
+                item.classList.toggle('open');
+            });
+        });
 
         window.addEventListener('scroll', function() {
             const hero = document.querySelector('.hero');
@@ -140,7 +140,12 @@ document.querySelectorAll('.accordion-toggle').forEach(btn => {
                 hero.classList.remove('hide-hero-text');
             }
         });
-</script>
+
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('open');
+        });
+    </script>
 
 </body>
 </html>
